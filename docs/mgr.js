@@ -1,11 +1,13 @@
 /* jshint esversion: 6 */
 
-define(['managerAPI'], function(Manager){
+define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/datapipe.min.js'], function(Manager) {
 
 	var API = new Manager();
 	
 	API.addSettings('skip', true);
 	API.setName('mgr');
+
+    init_data_pipe(API, 'DATAPIPEEXPERIMENTID', 'csv'); 
 
     var global = API.getGlobal();	
 
