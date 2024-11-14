@@ -151,7 +151,7 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/da
 
     // save variables to global
     API.addGlobal({
-        mediaURL: 'https://app-prod-04.implicit.harvard.edu/openserver/users/mayanna/raceform2-89/images/',//'/implicit/user/mayanna/raceform2/images/',
+        mediaURL: './images/',//'/implicit/user/mayanna/raceform2/images/',
         mins : '15', //Duration of your study, in minutes.
         commit:commit,
         //orderIE: orderIE,
