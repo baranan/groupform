@@ -1,14 +1,14 @@
 /* jshint esversion: 6 */
 
-define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@0.*/datapipe.min.js'], function(Manager) {
+define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/datapipe.min.js'], function(Manager) {
 
 	var API = new Manager();
 	
 	API.addSettings('skip', true);
 	API.setName('mgr');
 
-    init_data_pipe(API, 'DATAPIPEEXPERIMENTID', 'csv'); 
-
+    init_data_pipe(API, 'DATAPIPEEXPERIMENTID', {file_type:'csv'}); 
+	
     var global = API.getGlobal();	
 
     // get the session_id of the redirect study
